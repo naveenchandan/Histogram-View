@@ -113,10 +113,10 @@ class HistogramView @JvmOverloads constructor(
                 it.height
             )
             for (i in 0 until 256) {
-                intensityPixels[i] = i
-                redPixels[i] = i
-                greenPixels[i] = i
-                bluePixels[i] = i
+                intensityPixels[i] = 0
+                redPixels[i] = 0
+                greenPixels[i] = 0
+                bluePixels[i] = 0
             }
             for (i in pixels.indices) {
                 var luma = ((0.299f * Color.red(pixels[i])) +
